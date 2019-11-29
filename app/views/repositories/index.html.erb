@@ -1,0 +1,15 @@
+<h3>Currently Trending on Github</h3>
+
+<div class="callout primary">
+  <ul>
+    <% @repositories.each do |repository| %>
+    <li>
+      <p><b>Repository:  </b><%= repository.name %></p>
+      <p>Description:  <%= repository.description %></p>
+      <p>Primary Programming Language:  <%= repository.language %></p>
+      <p>Contributors:  <%= repository.contributors %></p>
+    </li>
+    <br />
+    <% end %>
+  </ul>
+</div>
